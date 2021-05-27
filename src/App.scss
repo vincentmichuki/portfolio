@@ -114,7 +114,7 @@
   }
 }
 
-.scroll-button{
+.contact-button{
   display: flex;
   align-items: center;
   position: fixed;
@@ -143,7 +143,7 @@
 
 @media only screen and (max-width: 850px) {
   .content-wrapper {
-    padding: 10px 10vmin;
+    padding: 10px 9vmin;
     .content-area-sec-one{
       .content-info{
         width: 100%;
@@ -158,11 +158,16 @@
   }
 
   .app-header{
-    padding: 10px 10vmin;
+    padding: 10px 9vmin;
     &>div{
       a{
         padding-left: 1rem;
       }
     }
+  }
+
+  .contact-button{
+    left: 9vmin;
+    bottom: 3rem;
   }
 }
