@@ -5,7 +5,6 @@
 .app-header{
   height: 100px;
   width: 100%;
-  max-width: inherit;
   padding: 10px 12vmin;
   display: flex;
   align-items: center;
@@ -61,7 +60,6 @@
   top: 0;
   left: 0;
   width: 100%;
-  max-width: inherit;
   height: 100%;
   background: radial-gradient(99% 134.05% at 20% 111.11%, rgba(72, 94, 128, 0.51) 0%, rgba(73, 95, 128, 0) 30%);
   .content-area-sec-one{
@@ -116,7 +114,6 @@
   }
 }
 
-
 .scroll-button{
   display: flex;
   align-items: center;
@@ -140,6 +137,21 @@
     box-shadow: 0 0 14px rgba(0, 0, 0, 0.09);
     img{
       width: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .content-wrapper {
+    padding: 10px 22vmin;
+  }
+
+  .app-header{
+    padding: 10px 10vmin;
+    &>div{
+      a{
+        padding-left: 1rem;
+      }
     }
   }
 }
