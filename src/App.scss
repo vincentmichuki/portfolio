@@ -1,0 +1,144 @@
+.App {
+  //max-width: 1920px;
+}
+
+.app-header{
+  height: 100px;
+  width: 100%;
+  max-width: inherit;
+  padding: 10px 12vmin;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+
+  &:before{
+    position: absolute;
+    content: '';
+    top: -200px;
+    left: -200px;
+    width: 800px;
+    height: 300px;
+    background: #39ad5e;
+    opacity: 0.2;
+    transform: rotate(-25deg);
+  }
+  strong{
+    font-weight: bolder;
+    font-size: 2rem;
+  }
+  &>div{
+    display: flex;
+    align-items: center;
+    a{
+      text-decoration: none;
+      font-weight: bold;
+      padding-left: 2rem;
+        display: inline-block;
+        margin-left: 0.3rem;
+        color: black;
+        font-size: 0.9rem;
+      &:first-child{
+        color: #f00;
+      }
+      &:nth-child(2){
+        color: rgb(29,161,242);
+      }
+      &:last-child{
+        color: rgb(10,102,194);
+      }
+    }
+  }
+}
+
+.content-wrapper{
+  padding: 10px 22vmin;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: inherit;
+  height: 100%;
+  background: radial-gradient(99% 134.05% at 20% 111.11%, rgba(72, 94, 128, 0.51) 0%, rgba(73, 95, 128, 0) 30%);
+  .content-area-sec-one{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    .content-info{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .content-image{
+      transform: translateY(50px);
+      img{
+        width: 60vmin;
+      }
+    }
+  }
+  .sub-title{
+    display: flex;
+    align-items: center;
+    opacity: 0.5;
+    margin-bottom: 2vmin;
+    span{
+      display: inline-block;
+      width: 60px;
+      height: 2px;
+      background: black;
+      margin-right: 5px;
+    }
+    strong{
+      color: black;
+      font-weight: bold;
+    }
+  }
+  .main-title{
+    font-weight: bolder;
+    color: black;
+    font-size: 6vmin;
+    span{
+      &:first-child{
+        color: #219653;
+      }
+      &:nth-child(3){
+        color: #4E8DA5;
+      }
+      &:last-child{
+        color: #E9A155;
+      }
+    }
+  }
+}
+
+
+.scroll-button{
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: 22vmin;
+  bottom: 4rem;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  button{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    width: 70px;
+    height: 70px;
+    border: none;
+    outline: none;
+    background: transparent;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.09);
+    img{
+      width: 30px;
+    }
+  }
+}
